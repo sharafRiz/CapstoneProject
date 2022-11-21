@@ -1,0 +1,25 @@
+<div class="main-content page-m">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            <form [formGroup]="deleteProductFormGroup" (ngSubmit)="deleteProduct()">
+                <div formGroupName="deleteproduct" class="form-area">
+                    <h3>Enter Product ID to delete</h3>
+                    <div class="row">
+                        <div class="col-md-2"><label>Product ID</label></div>
+                        <div class="col-md-9">
+                            <div class="input-space">
+                                <input formControlName="product_price" type="text">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-info">Delete Product</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
